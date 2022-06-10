@@ -18,7 +18,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: #000000;
+    /*background: #000000;*/
     padding: 15px 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -71,10 +71,35 @@
     height: 100vh;
     background-image: linear-gradient(to bottom right,  #000000,  #1e1d1f);
     color: #fff;
+    min-height: 500px;
+    font-family: 'Roboto', sans-serif;
 }
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+  font-size: 75px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 spam{
+  outline: none;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #2e129e 0%, #de005e  20%, #b60303 40%, #f4f80d 60%, #15d825 80%, #2e129e 100%);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  animation: animate 10s linear infinite;
 
-
-
+  font-weight: 500;
+}
 #sublinhado {
     display: flex;
     list-style: none;
@@ -117,3 +142,12 @@
     }
     
 }
+
+.avatar{
+  max-width: 70vh;
+  max-height: 80vw;
+}
+footer{
+  background-color: #0c0c0c;
+  color: #fff
+}  
