@@ -6,61 +6,243 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/public/css/style.css">
         <script src="https://kit.fontawesome.com/f7a1c0a146.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="/public/icons/Layer.svg">
         <title>Portifolio</title>
 
     </head>
     <body>
-
+        <header class="sticky">
+        
         <div class="navbar">
-
             <div class="max-width">
-                <div class="container">
-                <li><img class="text" src="/public/img/Layer.svg" alt="">
+                <li><img class="tag" src="/public/icons/Layer.svg" alt="">
                 </li>
-            </div>
-
                 <div class="logo"></ul>
-                <a href="#">João Victor Cavalcante
-                </a>
-            </div>
-            <ul class="menu">
-                <ul id="sublinhado" role="sublinhado">
-                    <li>
-
-                        <a href="#">Início</a>
-                    </li>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#">Habilidades</a>
-                    </li>
-                    <li>
-                        <a href="#">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
+                    <a href="#">João Victor Cavalcante
+                    </a>
+                </div>
+                <ul class="menu">
+                    <ul id="sublinhado" role="sublinhado">
+                    
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    
                 </ul>
             </ul>
+                <div class="menu-btn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
         </div>
+    </header>
+    
+        <!--home inicio-->
+        <section class="home" id="home">
+            <div class="max-width">
+                <div class="home-content">
+                    <div class="text-1">Olá, meu nome é</div>
+                    <div class="text-2">João Victor Cavalcante</div>
+                    <div class="text-3">e eu sou <spam>Desenvolvedor Full-Stack</spam></div>
+                    <a class="cv" href="/public/itens/João_Victor_Cavalcante_e_silva_-_Full_Stack_Developer (2).pdf" download>Baixar Currículo</a>
+            </div>
+        </section>
+    
+        <!--sessão sobre-->
+        <section class="about" id="about">
+            <div class="max-width">
+                <h2 class="title">Sobre</h2>
+                <div class="about-content">
+                    <div class="column left">
+                        <img src="/public/img/foto4.jpeg" alt="">
+                    </div>
+                    <div class="column right">
+                        <div class="text">Olá, deixe me aprensentar...</div>
+                        <p>Apaixonado por tecnologia desde criança, comecei a estudar programação no início de 2022, que era meu maior objetivo, desde então me dedico todos os dias estudando e praticando as novas linguagens, que não param de surgir. Este sou eu, João Victor, Desenvolvedor Web Full-Stack.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+         <!--sessão serviços-->
+         <section class="services" id="services">
+            <div class="max-width">
+                <h2 class="title">Projetos</h2>
+                <div class="serv-content">
+                   <div class="card">
+                       <div class="box">
+                        <a href="https://github.com/jotacoding/goat" target="_blank">
+                        <div class="text">Catálogo de Filmes</div>
+                        <p>Tecnologias usadas: Javascript, EJS, CSS</p>
+                    </a>
+                       </div>
+                   </div>
+                       
+                <div class="card">
+                    <div class="box">
+                        <a href="https://github.com/jotacoding/El-Geladon" target="_blank">
+                     <div class="text">Cardápio El Geladon</div>
+                     <p>Tecnologias usadas: Javascript, React, CSS</p>
+                     </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+         <!--sessão especialidade-->
+         <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="title">Habilidades</h2>
+                <div class="skills-content">
+                    <div class="column left">
+                        <div class="text">Sempre focado em evoluir...</div>
+                        <p>Atualmente estudando Web Development pela Blue EdTech, encerramento do curso em fevereiro de 2023.</p>
+                        
+                    </div>
+                    <div class="column right">
+                       <div class="bars">
+                           <div class="info">
+                               <span>HTML</span>
+                               <span>88%</span>
+                           </div>
+                           <div class="line html"></div>
+                       </div>
+                       <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>React</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PostgreSQL</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line sql"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Express JS</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="line ejs"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>Node JS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line node"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>GIT</span>
+                            <span>42%</span>
+                        </div>
+                        <div class="line git"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+    
+        <!--Sessão contato-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contato</h2>
+                <div class="contact-content">
+                   <div class="column left">
+                       <div class="text">Entre em contato</div>
+                       <p>Fique a vontade para visitar meu github e meu linkedIn, e caso queira, me mande um e-mail.</p>
+                   
+                   <div class="icons">
+                       <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">João Victor Cavalcante e Silva</div>
+                            </div>
+                       </div>
+                       <div class="row">
+                        <ion-icon name="earth-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Endereço</div>
+                            <div class="sub-title">Brasília, DF</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Email</div>
+                        <div class="sub-title">jvc881@gmail.com</div>
+                    </div>
+               </div>
+                   </div>
+                </div><!--column left-->
+                <div class="column rigth">
+                    
+                    <section id="contatos">
+                    
+                <section id="contato">
+                    <div id="contato_lista">
+                        
+                        <div>
+                            <a href="https://github.com/jotacoding" target="_blank">
+                            <img src="/public/icons/github (3).svg" alt="Ícone do Github">
+                            <p id="github">Acesse meu Github</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/joao-victor-cavalcante-silva/" target="_blank">
+                            <img src="/public/icons/linkedin (2).svg" alt="Ícone do LinkedIn">
+                            <p id="linkedin">Veja meu LinkedIn</p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="mailto:jvc881@gmail.com">
+                            <img src="/public/icons/mail.png" alt="Ícone do Gmail">
+                            <p id="email">Me mande um e-mail</p>
+                            </a>
+                        </div>           
+                        
+                        
+            
+                    </div>
+                </section>
+            </section>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--sessão  footer-->
+        <footer>
+            <span>Desenvolvido por <a href="#">João Victor Cavalcante</a> | Todos os direitos reservados 2022</span>
+        </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="/public/index.js"></script>
+        
+    
     </body>
-</html></div><!--Home Início--><section class="home" id="home">
-<div class="max-width">
-    <div class="home-content">
-        <div class="text-1">Olá, meu nome é</div>
-        <div class="text-2">João Victor Cavalcante</div>
-        <div class="text-3">eu sou <spam>Desenvolvedor Full-Stack</spam>
-        </div>
-    </div>
-</div>
-<a><img class="avatar" src="/public/img/avatar.png" alt=""></a>
-</section>
-<footer>
-    <h1>lolollolo</h1>
-</footer>
-</body>
 </html>
