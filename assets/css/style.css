@@ -576,6 +576,9 @@ footer span a:hover{
     .project .pro-content .card {
         width:100%;
     }
+    .menu{
+        display: none;
+    }
 }
 @media (max-width: 500px){
     .home .home-content .text-2{
