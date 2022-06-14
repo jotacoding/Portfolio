@@ -160,15 +160,15 @@ html{
 .home .home-content a{
     display: inline-block;
     background: #b32c2c;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 60px;
     border: 2px solid #df0000;
 }
 .home .home-content a:hover{
-    color: #868686;
+    color: #df0000;
     background: none;
 }
 
@@ -239,11 +239,11 @@ section .title::after{
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .services, .skills, .contact, footer{
+.about, .project, .skills, .contact, footer{
     font-family: 'Roboto', sans-serif;
 }
 .about .about-content,
-.services .serv-content,
+.project .pro-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -283,18 +283,18 @@ section .title::after{
     border-radius: 6px;
 }
 /*  sessão serviços */
-.services {
+.project{
     background: #111;
     color: #fff;
 }
-.services .title::before{
+.project .title::before{
     background: #fff;
 }
 
-.services .serv-content .card a{
+.project .pro-content .card a{
   color: #fff;
 }
-.services .serv-content .card{
+.project .pro-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -303,15 +303,15 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.project .pro-content .card:hover{
     background: #ff0000
 }
 
 
-.services .serv-content .card:hover ion-icon{
+.project .pro-content .card:hover ion-icon{
     color: #fff;
 }
-.services .serv-content .card .text{
+.project .pro-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -550,7 +550,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card {
+    .project .pro-content .card {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -573,7 +573,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card {
+    .project .pro-content .card {
         width:100%;
     }
 }
